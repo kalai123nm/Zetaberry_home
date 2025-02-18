@@ -448,6 +448,10 @@ nav ul li a.active {
         
     }
 
+    .hero{
+        align-items: center;
+    }
+
     .navbar ul {
         display: none;
         flex-direction: column;
@@ -471,11 +475,20 @@ nav ul li a.active {
 
     .hero h1 {
         font-size: 35px;
+        margin-left: 15px;
+        align-items: center;
+    }
+
+    .hero-content{
+        margin-left: 15px;
+        text-align: center;
+        align-items: center;
     }
 
     .hero p {
         font-size: 15px;
         margin-left: 15px;
+        text-align: center;
     }
 
     .image-side img {
@@ -486,10 +499,12 @@ nav ul li a.active {
 
     .text-side h1 {
         font-size: 28px;
+        align-items: center;
     }
 
     .text-side p {
         font-size: 11px;
+        align-items: center;
     }
 }
 
