@@ -257,6 +257,11 @@ nav ul li a.active {
     
 }
 
+#menu-icon{
+    font-size: 4rem;
+    display: none; 
+}
+
 .header-shrink {
     height: 45px; /* Reduced height */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -357,4 +362,245 @@ nav ul li a.active {
     margin-left: 255px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(236, 236, 236, 0.2);
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    .container {
+        margin-right: 30px;
+    }
+
+    .image-side img {
+        width: 90px;
+        height: 90px;
+        margin-left: 150px;
+    }
+
+    .text-side h1 {
+        font-size: 35px;
+    }
+
+    .text-side p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+    .image-side {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .image-side img {
+        width: 80px;
+        height: 80px;
+        margin-left: 100px;
+    }
+
+    .text-side {
+        padding: 15px;
+    }
+
+    .text-side h1 {
+        font-size: 30px;
+    }
+
+    .text-side p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    .container {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display:block;
+        font-size: 24px;
+        cursor: pointer;
+        
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        padding: 10px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .image-side img {
+        width: 70px;
+        height: 70px;
+        margin-left: 80px;
+    }
+
+    .text-side h1 {
+        font-size: 28px;
+    }
+
+    .text-side p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 80vh;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .image-side {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .image-side img {
+        width: 65px;
+        height: 65px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-side {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .text-side h1 {
+        font-size: 25px;
+    }
+
+    .text-side p {
+        font-size: 10px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .image-side img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-side h1 {
+        font-size: 22px;
+    }
+
+    .text-side p {
+        font-size: 10px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .container {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero {
+        height: 65vh;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 11px;
+    }
+
+    .image-side img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .text-side h1 {
+        font-size: 20px;
+    }
+
+    .text-side p {
+        font-size: 9px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
 }

@@ -9,16 +9,16 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
-// Header Animation on Scroll
-window.addEventListener('scroll', function () {
-     let header = document.querySelector('header');
-     if (window.scrollY > 50) {
-         header.style.background = "e0e0e0";
-         header.style.transition = "background 0.3s ease-in-out";
-     } else {
-         header.style.background = "f4f4f4";
-     }
-})
+// // Header Animation on Scroll
+// window.addEventListener('scroll', function () {
+//      let header = document.querySelector('header');
+//      if (window.scrollY > 50) {
+//          header.style.background = "#e0e0e0";
+//          header.style.transition = "background 0.3s ease-in-out";
+//      } else {
+//          header.style.background = "#f4f4f4";
+//      }
+// })
 
 
 window.addEventListener('scroll', function () {
